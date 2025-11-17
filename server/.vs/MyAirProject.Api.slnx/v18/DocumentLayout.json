@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\myairproject.api\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|solutionrelative:myairproject.api\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\myairproject.api\\core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|solutionrelative:myairproject.api\\core\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\BulletinBoard.Api.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\myairproject.api\\bulletinboardbulletinboard.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\BulletinBoard.Api.csproj|solutionrelative:myairproject.api\\bulletinboardbulletinboard.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\myairproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|solutionrelative:myairproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\myairproject.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA97512D-29C2-E71D-E2A8-B38324B4850A}|MyAirProject.Api\\MyAirProject.Api.csproj|solutionrelative:myairproject.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BulletinBoardBulletinBoard.http",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\BulletinBoardBulletinBoard.http",
+              "RelativeDocumentMoniker": "MyAirProject.Api\\BulletinBoardBulletinBoard.http",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\BulletinBoardBulletinBoard.http*",
+              "RelativeToolTip": "MyAirProject.Api\\BulletinBoardBulletinBoard.http*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-17T10:11:23.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MyAirProject.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Program.cs*",
+              "RelativeToolTip": "MyAirProject.Api\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:59:00.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Core\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "MyAirProject.Api\\Core\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Core\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "MyAirProject.Api\\Core\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:44:08.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "MyAirProject.Api\\Core\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Core\\Services\\UserService.cs",
+              "RelativeToolTip": "MyAirProject.Api\\Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:43:40.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MyAirProject.Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "MyAirProject.Api\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:38:33.442Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
