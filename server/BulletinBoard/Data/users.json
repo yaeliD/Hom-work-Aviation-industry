@@ -3,5 +3,10 @@
     "Id": 1,
     "Username": "yaeli",
     "PasswordHash": "AQAAAAIAAYagAAAAENmMhbayBMg4lA5JMEmPcALBGncNjUnM3wmeIQq4eltvTx8O5tTNcF5oMXxEt6uK7g=="
+  },
+  {
+    "Id": 2,
+    "Username": "customer@thingsboard.org",
+    "PasswordHash": "AQAAAAIAAYagAAAAEHVqCzgPyv/w3JeMA0oI4Puxm2vZtzo\u002Bkq4yl8D9mYY/czxK69sSrxYWjaa4zLA40A=="
   }
 ]

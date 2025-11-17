@@ -30,23 +30,36 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+
+    });
+});
 
 var app = builder.Build();
+
+// אם רוצים הפנייה ל-HTTPS
+//app.UseHttpsRedirection();
+
+// CORS חייב להיות לפני Authentication/Authorization
+app.UseCors("AllowAngularApp");
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Map controllers
+app.MapControllers();
 
-// Configure the HTTP request pipeline.
+// OpenAPI רק בסביבת פיתוח
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();

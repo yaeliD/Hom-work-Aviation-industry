@@ -1,12 +1,13 @@
 ﻿using BulletinBoard.Core.Models;
 using BulletinBoard.Core.Services;
 using BulletinBoard.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
-using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 
 namespace BulletinBoard.Controllers
@@ -26,6 +27,7 @@ namespace BulletinBoard.Controllers
 
 
         [HttpPost("login")]
+        [AllowAnonymous]
         public IActionResult Login([FromBody] UserDto dto)
         {
             var users = _userService.LoadUsers();
@@ -72,6 +74,7 @@ namespace BulletinBoard.Controllers
 
         [HttpPost]
         [HttpPost("register")]
+        [AllowAnonymous]
         public IActionResult Register([FromBody] UserDto dto)
         {
             var users = _userService.LoadUsers();
