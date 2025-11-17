@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyAirProject.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5432f342de17e7ffe88941eefb81b5373fe68aa9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90b12fc6cd19cfa5cbac000d1da60e9c5a18a7ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyAirProject.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyAirProject.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
