@@ -26,7 +26,7 @@ namespace BulletinBoard.Controllers
 
 
         [HttpPost("login")]
-        public IActionResult Login(UserDto dto)
+        public IActionResult Login([FromBody] UserDto dto)
         {
             var users = _userService.LoadUsers();
             var user = users.FirstOrDefault(u => u.Username == dto.Username);
@@ -54,7 +54,7 @@ namespace BulletinBoard.Controllers
     };
 
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("Yaeli_S_1999")
+                Encoding.UTF8.GetBytes("Yaeli_Shmuel_1999_207069584_314907528_yanon_s@#$%^^&*()")
             );
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -72,7 +72,7 @@ namespace BulletinBoard.Controllers
 
         [HttpPost]
         [HttpPost("register")]
-        public IActionResult Register(UserDto dto)
+        public IActionResult Register([FromBody] UserDto dto)
         {
             var users = _userService.LoadUsers();
 

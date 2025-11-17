@@ -1,4 +1,7 @@
+using BulletinBoard.Core.Models;
+using BulletinBoard.Core.Services;
 using BulletinBoard.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -11,6 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<BulletinService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
@@ -21,7 +26,7 @@ builder.Services.AddAuthentication("Bearer")
             ValidateAudience = false,
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("YOUR_SECRET_KEY_HERE_123456"))
+                Encoding.UTF8.GetBytes("Yaeli_Shmuel_1999_207069584_314907528_yanon_s@#$%^^&*()"))
         };
     });
 
