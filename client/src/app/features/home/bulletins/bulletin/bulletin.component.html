@@ -1,5 +1,8 @@
 <div class="bulletin-card">
+  <button mat-icon-button (click)="deleteBulletin(bulletin.id)">
+    <mat-icon>delete</mat-icon>
+  </button>
   <h3>{{ bulletin.title }}</h3>
   <p>{{ bulletin.description }}</p>
-  <span class="date">{{ bulletin.date | date:'mediumDate' }}</span>
+  <span class="date">{{ bulletin.date | date : "mediumDate" }}</span>
 </div>

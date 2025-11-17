@@ -1,21 +1,19 @@
-import { Component } from '@angular/core';
-import { Bulletin } from '../../../core/models/bulletin.model';
-import { BulletinService } from '../../../core/services/bulletin.service';
-import { BulletinComponent } from './bulletin/bulletin.component';
+import { Component, OnInit, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BulletinComponent } from './bulletin/bulletin.component';
+import { BulletinService } from '../../../core/services/bulletin.service';
 
 @Component({
   selector: 'app-bulletins',
-  imports: [BulletinComponent, CommonModule],
-  templateUrl: './bulletins.component.html',
-  styleUrl: './bulletins.component.css'
+  standalone: true,
+  imports: [CommonModule, BulletinComponent],
+  templateUrl: './bulletins.component.html'
 })
-export class BulletinsComponent {
-    bulletins: Bulletin[] = [];
+export class BulletinsComponent implements OnInit {
 
-  constructor(private bulletinService: BulletinService) {}
+  constructor(public bulletinService: BulletinService) {}
 
   ngOnInit(): void {
-    this.bulletins = this.bulletinService.getBulletins();
+    this.bulletinService.loadAll(); // טען את המודעות
   }
 }

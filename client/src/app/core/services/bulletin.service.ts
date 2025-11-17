@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { Bulletin } from '../models/bulletin.model';
 
 @Injectable({
@@ -8,32 +7,41 @@ import { Bulletin } from '../models/bulletin.model';
 })
 export class BulletinService {
 
-  private apiUrl = 'http://localhost:5203/api/bulletins'; // כתובת ה-API שלך
+  private apiUrl = 'http://localhost:5203/api/bulletins';
 
-  constructor(private http: HttpClient) { }
+  // Signal שמכיל את המודעות
+  bulletins = signal<Bulletin[]>([]);
 
-  // GET all bulletins
-  getAll(): Observable<Bulletin[]> {
-    return this.http.get<Bulletin[]>(`${this.apiUrl}`);
+  constructor(private http: HttpClient) {}
+
+  // טען את כל המודעות מהשרת
+  loadAll(): void {
+    this.http.get<Bulletin[]>(this.apiUrl).subscribe({
+      next: (data) => this.bulletins.set(data),
+      error: (err) => console.error(err)
+    });
   }
 
-  // GET bulletin by id
-  getById(id: number): Observable<Bulletin> {
-    return this.http.get<Bulletin>(`${this.apiUrl}/${id}`);
+  create(bulletin: Bulletin) {
+    this.http.post<Bulletin>(this.apiUrl, bulletin).subscribe({
+      next: (newBulletin) => this.bulletins.update(list => [...list, newBulletin]),
+      error: (err) => console.error(err)
+    });
   }
 
-  // POST create new bulletin
-  create(bulletin: Bulletin): Observable<Bulletin> {
-    return this.http.post<Bulletin>(`${this.apiUrl}`, bulletin);
+  update(id: number, bulletin: Bulletin) {
+    this.http.put<Bulletin>(`${this.apiUrl}/${id}`, bulletin).subscribe({
+      next: (updated) => this.bulletins.update(list =>
+        list.map(b => b.id === id ? updated : b)
+      ),
+      error: (err) => console.error(err)
+    });
   }
 
-  // PUT update bulletin
-  update(id: number, bulletin: Bulletin): Observable<Bulletin> {
-    return this.http.put<Bulletin>(`${this.apiUrl}/${id}`, bulletin);
-  }
-
-  // DELETE bulletin
-  delete(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  delete(id: number) {
+    this.http.delete<void>(`${this.apiUrl}/${id}`).subscribe({
+      next: () => this.bulletins.update(list => list.filter(b => b.id !== id)),
+      error: (err) => console.error(err)
+    });
   }
 }

@@ -1,3 +1,6 @@
 <div class="bulletins-container">
-  <app-bulletin *ngFor="let b of bulletins" [bulletin]="b"></app-bulletin>
+  <app-bulletin 
+      *ngFor="let b of bulletinService.bulletins()" 
+      [bulletin]="b">
+  </app-bulletin>
 </div>
