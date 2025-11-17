@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\controllers\\bulletincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\controllers\\bulletincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\core\\services\\bulletinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\core\\services\\bulletinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\data\\bulletins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\data\\bulletins.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\core\\models\\bulletin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\core\\models\\bulletin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\bulletinboard.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\bulletinboard.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|c:\\users\\yaelda\\desktop\\homwork aviation industry new\\hom-work-aviation-industry\\server\\bulletinboard\\bulletinboard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{65C900E0-26C0-DA39-9E64-35F1C92C6904}|BulletinBoard\\BulletinBoard.csproj|solutionrelative:bulletinboard\\bulletinboard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "BulletinBoard\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:57:41.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Core\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Services\\UserService.cs",
+              "RelativeToolTip": "BulletinBoard\\Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvy4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:54:47.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BulletinController.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Controllers\\BulletinController.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Controllers\\BulletinController.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Controllers\\BulletinController.cs",
+              "RelativeToolTip": "BulletinBoard\\Controllers\\BulletinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:41:35.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BulletinService.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Services\\BulletinService.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Core\\Services\\BulletinService.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Services\\BulletinService.cs",
+              "RelativeToolTip": "BulletinBoard\\Core\\Services\\BulletinService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:42:40.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Core\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Models\\User.cs",
+              "RelativeToolTip": "BulletinBoard\\Core\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:53:11.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Data\\users.json",
+              "RelativeDocumentMoniker": "BulletinBoard\\Data\\users.json",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Data\\users.json",
+              "RelativeToolTip": "BulletinBoard\\Data\\users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T15:55:40.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BulletinBoard.sourcelink.json",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json",
+              "RelativeDocumentMoniker": "BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json",
+              "RelativeToolTip": "BulletinBoard\\obj\\Debug\\net10.0\\BulletinBoard.sourcelink.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T12:03:40.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bulletins.json",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Data\\bulletins.json",
+              "RelativeDocumentMoniker": "BulletinBoard\\Data\\bulletins.json",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Data\\bulletins.json",
+              "RelativeToolTip": "BulletinBoard\\Data\\bulletins.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T10:49:19.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BulletinBoard.csproj",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\BulletinBoard.csproj",
+              "RelativeDocumentMoniker": "BulletinBoard\\BulletinBoard.csproj",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\BulletinBoard.csproj",
+              "RelativeToolTip": "BulletinBoard\\BulletinBoard.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-17T10:28:47.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bulletin.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Models\\Bulletin.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Core\\Models\\Bulletin.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Core\\Models\\Bulletin.cs",
+              "RelativeToolTip": "BulletinBoard\\Core\\Models\\Bulletin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:42:55.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Program.cs",
+              "RelativeDocumentMoniker": "BulletinBoard\\Program.cs",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\Program.cs",
+              "RelativeToolTip": "BulletinBoard\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T11:25:05.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\appsettings.json",
+              "RelativeDocumentMoniker": "BulletinBoard\\appsettings.json",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\appsettings.json",
+              "RelativeToolTip": "BulletinBoard\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T11:42:29.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BulletinBoard.http",
+              "DocumentMoniker": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\BulletinBoard.http",
+              "RelativeDocumentMoniker": "BulletinBoard\\BulletinBoard.http",
+              "ToolTip": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\BulletinBoard\\BulletinBoard.http",
+              "RelativeToolTip": "BulletinBoard\\BulletinBoard.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-11-17T11:33:03.639Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
