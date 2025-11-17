@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\MyAirProject.Api.csproj": {}
+    "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\MyAirProject.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\MyAirProject.Api.csproj": {
+    "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\MyAirProject.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\MyAirProject.Api.csproj",
+        "projectUniqueName": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\MyAirProject.Api.csproj",
         "projectName": "MyAirProject.Api",
-        "projectPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\MyAirProject.Api.csproj",
+        "projectPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\MyAirProject.Api.csproj",
         "packagesPath": "C:\\Users\\yaelda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\obj\\",
+        "outputPath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

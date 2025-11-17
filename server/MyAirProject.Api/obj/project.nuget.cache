@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S98S9u3p3iY=",
+  "dgSpecHash": "Vu5ZSaPvcqs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry\\MyAirProject.Api\\MyAirProject.Api\\MyAirProject.Api.csproj",
+  "projectFilePath": "C:\\Users\\yaelda\\Desktop\\HomWork Aviation industry new\\Hom-work-Aviation-industry\\server\\MyAirProject.Api\\MyAirProject.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yaelda\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\10.0.0\\microsoft.aspnetcore.authentication.negotiate.10.0.0.nupkg.sha512",
     "C:\\Users\\yaelda\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
