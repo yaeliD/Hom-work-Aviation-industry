@@ -2,6 +2,9 @@
   <button mat-icon-button (click)="deleteBulletin(bulletin.id)">
     <mat-icon>delete</mat-icon>
   </button>
+  <button mat-icon-button (click)="openEdit(bulletin)">
+    <mat-icon>edit</mat-icon>
+  </button>
   <h3>{{ bulletin.title }}</h3>
   <p>{{ bulletin.description }}</p>
   <span class="date">{{ bulletin.date | date : "mediumDate" }}</span>

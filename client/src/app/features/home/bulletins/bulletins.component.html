@@ -1,6 +1,10 @@
+<div class="toolbar">
+  <button mat-flat-button color="primary" (click)="openCreate()">
+    <mat-icon>add</mat-icon> יצירת מודעה
+  </button>
+</div>
 <div class="bulletins-container">
-  <app-bulletin 
-      *ngFor="let b of bulletinService.bulletins()" 
-      [bulletin]="b">
-  </app-bulletin>
+@for (b of bulletinService.bulletins(); track b.id) {
+  <app-bulletin [bulletin]="b" />
+}
 </div>

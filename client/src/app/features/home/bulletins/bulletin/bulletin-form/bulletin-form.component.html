@@ -1,0 +1,30 @@
+<h2 class="form-title">
+  <mat-icon aria-hidden="false" aria-label="bulletin icon">campaign</mat-icon>
+  {{ titleText }}
+</h2>
+
+<form [formGroup]="form" class="form-layout" (ngSubmit)="save()">
+  <mat-form-field appearance="fill" class="full">
+    <mat-label>כותרת</mat-label>
+    <input matInput formControlName="Title" autocomplete="off">
+    <mat-error *ngIf="Title?.hasError('required')">הכותרת נדרשת</mat-error>
+    <mat-error *ngIf="Title?.hasError('maxLength')">אורך הכותרת גדול מדי</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full">
+    <mat-label>תיאור</mat-label>
+    <textarea matInput rows="6" formControlName="Description"></textarea>
+    <mat-error *ngIf="Description?.hasError('required')">התיאור נדרש</mat-error>
+  </mat-form-field>
+
+  <div class="actions">
+    <button mat-stroked-button type="button" (click)="cancel()">
+      <mat-icon>close</mat-icon> ביטול
+    </button>
+
+    <button mat-flat-button color="primary" type="submit">
+      <mat-icon>save</mat-icon>
+      שמור
+    </button>
+  </div>
+</form>
