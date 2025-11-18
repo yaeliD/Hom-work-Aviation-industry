@@ -15,6 +15,12 @@ namespace BulletinBoard.Controllers
             _service = service;
         }
 
+        private int GetUserId()
+        {
+            var claim = User.FindFirst("userId");
+            return claim != null ? int.Parse(claim.Value) : 0;
+        }
+
         [HttpGet]
         [ActionName("GetAllBulletins")]
         public IActionResult GetAllBulletins() =>
@@ -33,6 +39,13 @@ namespace BulletinBoard.Controllers
         [ActionName("CreateBulletin")]
         public IActionResult CreateBulletin([FromBody] Bulletin bulletin)
         {
+            var userName = User?.Identity?.Name; // צריך להיות שם המשתמש
+            var claim = User?.FindFirst("userId");
+            if (claim == null) return Unauthorized("No user claim found");
+
+            int userId = GetUserId();
+            bulletin.UserId = userId;
+
             var created = _service.Add(bulletin);
             return Ok(created);
         }
@@ -41,16 +54,34 @@ namespace BulletinBoard.Controllers
         [ActionName("UpdateBulletin")]
         public IActionResult UpdateBulletin(int id, Bulletin bulletin)
         {
+            int userId = GetUserId();
+            var existing = _service.Get(id);
+            if (existing == null)
+                return NotFound();
+
+            if (existing.UserId != userId)
+                return Forbid(); // ❌ משתמש זר
+
+            bulletin.UserId = userId; // שלא יעקוף את זה מהלקוח
             var updated = _service.Update(id, bulletin);
-            return updated == null ? NotFound() : Ok(updated);
+            return Ok(updated);
         }
 
         [HttpDelete("{id}")]
         [ActionName("DeleteBulletin")]
         public IActionResult DeleteBulletin(int id)
         {
-            var success = _service.Delete(id);
-            return success ? Ok() : NotFound();
+            int userId = GetUserId();
+
+            var existing = _service.Get(id);
+            if (existing == null)
+                return NotFound();
+
+            if (existing.UserId != userId)
+                return Forbid();
+
+            _service.Delete(id);
+            return Ok();
         }
     }
 }

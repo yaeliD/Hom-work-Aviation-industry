@@ -1,23 +1,42 @@
 .bulletin-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-  background-color: #fff;
+  position: relative;
+  border-radius: 12px;
+  padding-bottom: 12px;
 
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  .avatar {
+    background-color: #1976d2;
+    color: white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
   }
 
-  h3 {
-    margin: 0 0 0.5rem 0;
+  .actions {
+    position: absolute;
+    top: 12px;
+    left: 12px; 
+    display: flex;
+    gap: 4px;
+
+    button {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+    }
   }
 
   .date {
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+  mat-card-content {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }

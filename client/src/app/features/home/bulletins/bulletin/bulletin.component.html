@@ -1,11 +1,27 @@
-<div class="bulletin-card">
-  <button mat-icon-button (click)="deleteBulletin(bulletin.id)">
-    <mat-icon>delete</mat-icon>
-  </button>
-  <button mat-icon-button (click)="openEdit(bulletin)">
-    <mat-icon>edit</mat-icon>
-  </button>
-  <h3>{{ bulletin.title }}</h3>
-  <p>{{ bulletin.description }}</p>
-  <span class="date">{{ bulletin.date | date : "mediumDate" }}</span>
-</div>
+<mat-card class="bulletin-card">
+  <mat-card-header>
+    <mat-card-title>{{ bulletin.title }}</mat-card-title>
+    <mat-card-subtitle class="date">
+      {{ bulletin.date | date : "mediumDate" }}
+    </mat-card-subtitle>
+
+    @if(userId() == bulletin.userId){
+    <div class="actions">
+      <button
+        mat-icon-button
+        color="warn"
+        (click)="deleteBulletin(bulletin.id)"
+      >
+        <mat-icon>delete</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)="openEdit(bulletin)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+    }
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>{{ bulletin.description }}</p>
+  </mat-card-content>
+</mat-card>

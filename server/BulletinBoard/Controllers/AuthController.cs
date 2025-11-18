@@ -25,7 +25,6 @@ namespace BulletinBoard.Controllers
             _hasher = hasher;
         }
 
-
         [HttpPost("login")]
         [AllowAnonymous]
         public IActionResult Login([FromBody] UserDto dto)

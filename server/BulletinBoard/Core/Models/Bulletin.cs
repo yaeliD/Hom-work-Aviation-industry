@@ -7,5 +7,6 @@
         public string Description { get; set; } = string.Empty;
         public string Author { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public int UserId { get;  set; }
     }
 }

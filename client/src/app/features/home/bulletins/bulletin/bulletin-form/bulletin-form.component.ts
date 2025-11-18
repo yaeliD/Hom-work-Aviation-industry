@@ -6,6 +6,7 @@ import {
   inject,
   Inject,
   runInInjectionContext,
+  signal,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -18,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { jwtDecode } from 'jwt-decode';
 import {
   MatDialogRef,
   MAT_DIALOG_DATA,
@@ -25,6 +27,7 @@ import {
 } from '@angular/material/dialog';
 import { Bulletin } from '../../../../../core/models/bulletin.model';
 import { BulletinService } from '../../../../../core/services/bulletin.service';
+import { AuthService } from '../../../../../core/services/auth.service';
 
 export interface BulletinFormData {
   mode: 'create' | 'edit';
@@ -51,12 +54,14 @@ export class BulletinFormComponent {
   form: FormGroup;
   mode: 'create' | 'edit';
   titleText = '';
+  userId = signal<number>(0);
 
   constructor(
     private fb: FormBuilder,
     private bulletinService: BulletinService,
     private dialogRef: MatDialogRef<BulletinFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: BulletinFormData
+    @Inject(MAT_DIALOG_DATA) public data: BulletinFormData,
+    private auth: AuthService
   ) {
     const env = inject(EnvironmentInjector);
 
@@ -91,6 +96,17 @@ export class BulletinFormComponent {
 
     this.titleText =
       this.mode === 'create' ? 'יצירת מודעה חדשה' : 'עריכת מודעה';
+
+    const token = this.auth.getToken();
+    console.log(token, 'out');
+    if (token) {
+      console.log(token, 'in');
+
+      const decoded: any = jwtDecode(token);
+      console.log(decoded); // 🔍 בדקי איזה מפתח קיים
+
+      this.userId.set(decoded.userId);
+    }
   }
 
   get Title() {
@@ -100,6 +116,15 @@ export class BulletinFormComponent {
     return this.form.get('Description');
   }
 
+  // get userId() {
+  //   const token = this.auth.getToken();
+  //   if (!token) return 0;
+  //   const decoded: any = jwtDecode(token);
+  //   console.log(decoded);
+  //   return decoded.userId;
+
+  // }
+
   save() {
     if (this.form.invalid) {
       this.form.markAllAsTouched();
@@ -107,11 +132,14 @@ export class BulletinFormComponent {
     }
 
     const payload: Bulletin = {
+      createdAt: new Date().toISOString(),
       id: this.data?.bulletin?.id ?? 0,
       title: this.form.value.Title,
       description: this.form.value.Description,
       date: this.form.value.Date,
+      userId: this.userId(), // ← מוסיף לשדה החדש
     };
+    console.log(payload, 'payload', this.userId());
 
     if (this.mode === 'create') {
       this.bulletinService.create(payload);

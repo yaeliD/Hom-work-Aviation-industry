@@ -1,10 +1,27 @@
-<div class="toolbar">
-  <button mat-flat-button color="primary" (click)="openCreate()">
-    <mat-icon>add</mat-icon> יצירת מודעה
+<div class="filters-container">
+
+  <mat-form-field appearance="outline">
+    <mat-label>חיפוש לפי כותרת</mat-label>
+    <input matInput (input)="titleFilter.set($any($event.target).value)" />
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>פילטור לפי תאריך</mat-label>
+    <input matInput type="date"
+           (change)="dateFilter.set($any($event.target).value || null)" />
+    <mat-icon matSuffix>event</mat-icon>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" class="add-btn" (click)="openCreate()">
+    <mat-icon>add</mat-icon>
+    יצירת מודעה
   </button>
+
 </div>
+
 <div class="bulletins-container">
-@for (b of bulletinService.bulletins(); track b.id) {
-  <app-bulletin [bulletin]="b" />
-}
+  @for (b of filteredBulletins(); track b.id) {
+    <app-bulletin [bulletin]="b"></app-bulletin>
+  }
 </div>

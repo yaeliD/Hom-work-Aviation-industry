@@ -32,6 +32,8 @@ export class BulletinService {
   }
 
   create(bulletin: Bulletin) {
+    console.log(bulletin);
+
     this.http.post<Bulletin>(this.apiUrl, bulletin).subscribe({
       next: (newBulletin) => {
         this.notifySuccess();
