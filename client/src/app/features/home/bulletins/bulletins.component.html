@@ -1,27 +1,44 @@
-<div class="filters-container">
+<div class="toolbar">
+  <!-- כפתור ההוספה -->
 
-  <mat-form-field appearance="outline">
-    <mat-label>חיפוש לפי כותרת</mat-label>
-    <input matInput (input)="titleFilter.set($any($event.target).value)" />
-    <mat-icon matSuffix>search</mat-icon>
-  </mat-form-field>
 
-  <mat-form-field appearance="outline">
-    <mat-label>פילטור לפי תאריך</mat-label>
-    <input matInput type="date"
-           (change)="dateFilter.set($any($event.target).value || null)" />
-    <mat-icon matSuffix>event</mat-icon>
-  </mat-form-field>
-
-  <button mat-flat-button color="primary" class="add-btn" (click)="openCreate()">
+  <!-- שדות סינון -->
+  <div class="filters-container">
+  <button
+    mat-flat-button
+    color="primary"
+    class="add-btn"
+    (click)="openCreate()"
+  >
     <mat-icon>add</mat-icon>
     יצירת מודעה
   </button>
 
+    <mat-form-field appearance="outline">
+      <mat-label>חיפוש לפי כותרת</mat-label>
+      <input matInput (input)="titleFilter.set($any($event.target).value)" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>פילטור מ תאריך</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        (dateChange)="dateFilter.set($any($event.target).value || null)"
+      />
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
 </div>
 
-<div class="bulletins-container">
+
+<mat-grid-list cols="4" rowHeight="1:1" gutterSize="16px">
   @for (b of filteredBulletins(); track b.id) {
-    <app-bulletin [bulletin]="b"></app-bulletin>
+  <mat-grid-tile><app-bulletin [bulletin]="b"></app-bulletin></mat-grid-tile>
   }
+</mat-grid-list>
+<div *ngIf="filteredBulletins().length === 0" class="no-bulletins">
+  אין מודעות להצגה
 </div>

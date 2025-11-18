@@ -9,10 +9,14 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {provideNativeDateAdapter} from '@angular/material/core';
 
 @Component({
   selector: 'app-bulletins',
-  standalone: true,
+  standalone: true,  
+  providers: [provideNativeDateAdapter()],
   imports: [
     CommonModule,
     BulletinComponent,
@@ -21,9 +25,10 @@ import { MatInputModule } from '@angular/material/input';
       MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatIconModule,
+    MatGridListModule, MatDatepickerModule
   ],
   templateUrl: './bulletins.component.html',
+  
 })
 export class BulletinsComponent implements OnInit {
   constructor(
@@ -63,3 +68,4 @@ export class BulletinsComponent implements OnInit {
     });
   }
 }
+

@@ -1,14 +1,36 @@
-<form [formGroup]="form" (ngSubmit)="submit()" class="form">
-  <h2>Register</h2>
-  <input formControlName="username" placeholder="Username" />
-  <div *ngIf="form.get('username')?.touched && form.get('username')?.invalid">
-    Username must be at least 3 characters
-  </div>
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
 
-  <input type="password" formControlName="password" placeholder="Password" />
-  <div *ngIf="form.get('password')?.touched && form.get('password')?.invalid">
-    Password must be at least 6 characters
-  </div>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <!-- שדה משתמש -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" placeholder="Username" />
+          <mat-icon matSuffix>person</mat-icon>
+          <mat-error *ngIf="form.get('username')?.touched && form.get('username')?.invalid">
+            Username must be at least 3 characters
+          </mat-error>
+        </mat-form-field>
 
-  <button type="submit" [disabled]="form.invalid">Register</button>
-</form>
+        <!-- סיסמה -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" placeholder="Password" />
+          <mat-icon matSuffix>lock</mat-icon>
+          <mat-error *ngIf="form.get('password')?.touched && form.get('password')?.invalid">
+            Password must be at least 6 characters
+          </mat-error>
+        </mat-form-field>
+
+        <!-- כפתור הרשמה -->
+        <button mat-flat-button color="primary" class="full-width" type="submit" [disabled]="form.invalid">
+          Register
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

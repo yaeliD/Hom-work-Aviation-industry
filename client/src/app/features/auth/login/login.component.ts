@@ -3,6 +3,14 @@ import { AuthService, UserCredentials } from '../../../core/services/auth.servic
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { BulletinComponent } from '../../home/bulletins/bulletin/bulletin.component';
+import { MatCardContent, MatCard, MatCardHeader, MatCardTitle } from "@angular/material/card";
 
 @Component({
   selector: 'app-login',
@@ -10,7 +18,18 @@ import { Router } from '@angular/router';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-  ],
+    CommonModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatGridListModule, MatDatepickerModule,
+    MatCardContent,
+    MatCard,
+    MatCardHeader,
+    MatCardTitle
+],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

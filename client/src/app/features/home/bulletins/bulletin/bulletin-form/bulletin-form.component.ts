@@ -55,6 +55,7 @@ export class BulletinFormComponent {
   mode: 'create' | 'edit';
   titleText = '';
   userId = signal<number>(0);
+  selectedFile: File | null = null;
 
   constructor(
     private fb: FormBuilder,
@@ -116,15 +117,6 @@ export class BulletinFormComponent {
     return this.form.get('Description');
   }
 
-  // get userId() {
-  //   const token = this.auth.getToken();
-  //   if (!token) return 0;
-  //   const decoded: any = jwtDecode(token);
-  //   console.log(decoded);
-  //   return decoded.userId;
-
-  // }
-
   save() {
     if (this.form.invalid) {
       this.form.markAllAsTouched();
@@ -138,7 +130,7 @@ export class BulletinFormComponent {
       description: this.form.value.Description,
       date: this.form.value.Date,
       userId: this.userId(), // ← מוסיף לשדה החדש
-    };
+   };
     console.log(payload, 'payload', this.userId());
 
     if (this.mode === 'create') {

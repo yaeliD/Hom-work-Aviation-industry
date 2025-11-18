@@ -3,4 +3,9 @@
   margin: 24px 0;
   font-size: 28px;
   font-weight: 600;
+  color: black;
+}
+
+.card-background {
+    background: linear-gradient(135deg, #f6f7f8, #e9a4da);
 }

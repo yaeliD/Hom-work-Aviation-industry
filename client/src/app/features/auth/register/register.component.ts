@@ -3,13 +3,32 @@ import { AuthService, UserCredentials } from '../../../core/services/auth.servic
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardContent, MatCard, MatCardHeader, MatCardTitle } from '@angular/material/card';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [
-    CommonModule,
+   CommonModule,
     ReactiveFormsModule,
+    CommonModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatGridListModule, 
+    MatDatepickerModule,
+    MatCardContent,
+    MatCard,
+    MatCardHeader,
+    MatCardTitle
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']

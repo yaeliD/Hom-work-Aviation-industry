@@ -1,11 +1,20 @@
-<mat-card class="bulletin-card">
+<mat-card class="example-card" appearance="outlined">
   <mat-card-header>
-    <mat-card-title>{{ bulletin.title }}</mat-card-title>
+    <div mat-card-avatar class="example-header-image"></div>
+   <mat-card-title class="bulletin-title">{{ bulletin.title }}</mat-card-title>
     <mat-card-subtitle class="date">
       {{ bulletin.date | date : "mediumDate" }}
     </mat-card-subtitle>
-
-    @if(userId() == bulletin.userId){
+  </mat-card-header>
+  <!-- <img mat-card-image src="{{ bulletin.img }}" alt="Photo of a Shiba Inu"> -->
+  <mat-card-content class="bulletin-description">
+      <hr class="divider" />
+    <p>
+   {{ bulletin.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+     @if(userId() == bulletin.userId){
     <div class="actions">
       <button
         mat-icon-button
@@ -19,9 +28,5 @@
       </button>
     </div>
     }
-  </mat-card-header>
-
-  <mat-card-content>
-    <p>{{ bulletin.description }}</p>
-  </mat-card-content>
+  </mat-card-actions>
 </mat-card>

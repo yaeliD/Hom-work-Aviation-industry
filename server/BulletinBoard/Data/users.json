@@ -8,5 +8,10 @@
     "Id": 2,
     "Username": "customer@thingsboard.org",
     "PasswordHash": "AQAAAAIAAYagAAAAEHVqCzgPyv/w3JeMA0oI4Puxm2vZtzo\u002Bkq4yl8D9mYY/czxK69sSrxYWjaa4zLA40A=="
+  },
+  {
+    "Id": 3,
+    "Username": "Yanon",
+    "PasswordHash": "AQAAAAIAAYagAAAAEGWmhh\u002B9a19\u002BH4WEQi5xOW\u002BXzmoiIJkWSU3UeI6ZWCUpxG1NhMWyuGQm5UgXSASi1g=="
   }
 ]

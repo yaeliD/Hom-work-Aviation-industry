@@ -1,36 +1,16 @@
-.filters-container {
+.toolbar {
   display: flex;
-  gap: 16px;
   align-items: center;
-  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
 .add-btn {
-  height: 56px;
+  /* נשאר בצד ההתחלתי (ב-RTL זה ימין) */
 }
 
-.bulletins-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
-  padding-bottom: 40px;
-}
 .filters-container {
   display: flex;
-  gap: 16px;
+  gap: 12px;
+  margin-inline-start: auto; /* דוחף את השדות לצד ההפוך */
   align-items: center;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
-
-.add-btn {
-  height: 56px;
-}
-
-.bulletins-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
-  padding-bottom: 40px;
 }

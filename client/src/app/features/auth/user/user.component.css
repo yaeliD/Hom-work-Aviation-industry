@@ -1,0 +1,12 @@
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f6f7f8, #e9a4da);
+}
+
+.user-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
