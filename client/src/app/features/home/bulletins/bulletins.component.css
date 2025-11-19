@@ -4,13 +4,14 @@
   flex-wrap: wrap;
 }
 
-.add-btn {
-  /* נשאר בצד ההתחלתי (ב-RTL זה ימין) */
-}
-
 .filters-container {
   display: flex;
   gap: 12px;
   margin-inline-start: auto;
   align-items: center;
+}
+
+::ng-deep .mat-grid-list {
+    position: static !important;
+    direction: rtl;
 }

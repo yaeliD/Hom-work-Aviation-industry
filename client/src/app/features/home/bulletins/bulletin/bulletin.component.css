@@ -42,3 +42,8 @@
   display: flex;
   justify-content: flex-end;
 }
+
+
+mat-card:hover {
+  transform: rotate(0deg) scale(1.02);
+}
