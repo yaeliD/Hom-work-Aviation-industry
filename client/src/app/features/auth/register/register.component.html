@@ -6,7 +6,6 @@
 
     <mat-card-content>
       <form [formGroup]="form" (ngSubmit)="submit()">
-        <!-- שדה משתמש -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Username</mat-label>
           <input matInput formControlName="username" placeholder="Username" />
@@ -16,7 +15,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- סיסמה -->
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Password</mat-label>
           <input matInput type="password" formControlName="password" placeholder="Password" />
@@ -26,7 +24,6 @@
           </mat-error>
         </mat-form-field>
 
-        <!-- כפתור הרשמה -->
         <button mat-flat-button color="primary" class="full-width" type="submit" [disabled]="form.invalid">
           Register
         </button>

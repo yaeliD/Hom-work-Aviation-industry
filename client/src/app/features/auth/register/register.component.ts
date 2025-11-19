@@ -50,7 +50,6 @@ form: FormGroup;
     this.auth.register(credentials).subscribe({
       next: () => {
         this.router.navigate(['/home']);
-        //alert('User registered successfully!');
       },
       error: (err: { error: any; }) => alert(err.error)
     });

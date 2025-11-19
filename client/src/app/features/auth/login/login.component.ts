@@ -9,7 +9,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { BulletinComponent } from '../../home/bulletins/bulletin/bulletin.component';
 import { MatCardContent, MatCard, MatCardHeader, MatCardTitle } from "@angular/material/card";
 
 @Component({
@@ -52,7 +51,6 @@ export class LoginComponent {
       next: (res: { token: any; }) => {
         this.auth.setToken(res.token);
         this.router.navigate(['/home']);
-        //alert(`Logged in as ${this.auth.getCurrentUser().username}`);
       },
       error: (err: { error: any; }) => alert(err.error)
     });

@@ -9,7 +9,6 @@ export class BulletinService {
 
   private apiUrl = 'http://localhost:5203/api/bulletins';
 
-  // Signal שמכיל את המודעות
   bulletins = signal<Bulletin[]>([]);
   saveComplete = signal(false);
 
@@ -22,7 +21,6 @@ export class BulletinService {
 
   constructor(private http: HttpClient) {}
 
-  // טען את כל המודעות מהשרת
   loadAll(): void {
     this.http.get<Bulletin[]>(this.apiUrl).subscribe({
       next: (data) => {this.bulletins.set([...data]), console.log(data,this.bulletins());

@@ -1,5 +1,4 @@
 import {
-  afterNextRender,
   Component,
   effect,
   EnvironmentInjector,
@@ -50,7 +49,6 @@ export interface BulletinFormData {
   styleUrls: ['./bulletin-form.component.css'],
 })
 export class BulletinFormComponent {
-  //להוציא ל OnInit
   form: FormGroup;
   mode: 'create' | 'edit';
   titleText = '';
@@ -78,8 +76,6 @@ export class BulletinFormComponent {
     });
 
     this.mode = data?.mode ?? 'create';
-    console.log(data);
-
     this.form = this.fb.group({
       Title: [
         data?.bulletin?.title ?? '',
@@ -97,15 +93,9 @@ export class BulletinFormComponent {
 
     this.titleText =
       this.mode === 'create' ? 'יצירת מודעה חדשה' : 'עריכת מודעה';
-
     const token = this.auth.getToken();
-    console.log(token, 'out');
     if (token) {
-      console.log(token, 'in');
-
       const decoded: any = jwtDecode(token);
-      console.log(decoded); // 🔍 בדקי איזה מפתח קיים
-
       this.userId.set(decoded.userId);
     }
   }
@@ -129,9 +119,8 @@ export class BulletinFormComponent {
       title: this.form.value.Title,
       description: this.form.value.Description,
       date: this.form.value.Date,
-      userId: this.userId(), // ← מוסיף לשדה החדש
-   };
-    console.log(payload, 'payload', this.userId());
+      userId: this.userId(),
+    };
 
     if (this.mode === 'create') {
       this.bulletinService.create(payload);

@@ -5,7 +5,7 @@ import { BulletinService } from '../../../core/services/bulletin.service';
 import { BulletinFormComponent } from './bulletin/bulletin-form/bulletin-form.component';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -37,14 +37,12 @@ export class BulletinsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.bulletinService.loadAll(); // טען את המודעות
+    this.bulletinService.loadAll();
   }
 
-  // פילטרים
   titleFilter = signal('');
   dateFilter = signal<string | null>(null);
 
-  // פילטור מסודר
   filteredBulletins = computed(() => {
     const list = this.bulletinService.bulletins();
     const title = this.titleFilter().toLowerCase();
@@ -62,9 +60,6 @@ export class BulletinsComponent implements OnInit {
       data: { mode: 'create' },
     });
     ref.afterClosed().subscribe((result) => {
-      if (result?.ok) {
-        // כבר הטופס עדכן את ה-Signal דרך service, אין צורך בפעולה נוספת
-      }
     });
   }
 }

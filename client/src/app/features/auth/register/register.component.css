@@ -32,6 +32,6 @@
 
   mat-error {
     font-size: 0.85rem;
-    color: #f44336; /* אדום להודעות שגיאה */
+    color: #f44336;
   }
 }

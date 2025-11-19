@@ -33,30 +33,16 @@ export class BulletinComponent {
     private auth: AuthService
   ) {
     const token = this.auth.getToken();
-    console.log(token,"out");
   if (token) {
-    console.log(token,"in");
-      
-      const decoded: any = jwtDecode(token);
-      console.log(decoded); // 🔍 בדקי איזה מפתח קיים
-
-      this.userId.set(decoded.userId); // ⚡ set את הערך ל-signalconst token = localStorage.getItem('token'
+    const decoded: any = jwtDecode(token);
+    this.userId.set(decoded.userId);
   }
   }
-  // get userId() {
-  //   const token = localStorage.getItem('token');
-  //   if (!token) return 0;
-
-  //   const decoded: any = jwtDecode(token);
-  //   console.log(this.userId === this.bulletin.userId, this.userId, this.bulletin.userId);
-
-  //   return decoded.userId;
-  // }
 
   deleteBulletin(id: number) {
     this.bulletinService.delete(id);
   }
-  
+
   openEdit(b: Bulletin) {
     const ref = this.dialog.open(BulletinFormComponent, {
       data: { mode: 'edit', bulletin: b },

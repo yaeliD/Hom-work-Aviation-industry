@@ -9,7 +9,6 @@ export class JwtInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const token = this.auth.getToken();
-    console.log('Interceptor token:', token); // בדיקה
     if (token) {
       request = request.clone({
         setHeaders: { Authorization: `Bearer ${token}` }

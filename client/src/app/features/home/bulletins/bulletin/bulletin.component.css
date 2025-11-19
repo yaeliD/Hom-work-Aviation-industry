@@ -9,10 +9,10 @@
 .bulletin-title {
   font-size: 1rem;
   font-weight: 700;
-  white-space: nowrap;   /* שורה אחת בלבד */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px;          /* אורך מרבי (אפשר לשנות) */
+  max-width: 200px;
 }
 
 .mat-card-image {
@@ -22,7 +22,7 @@
 
 .divider {
   border: none;
-  border-top: 1px solid #ddd; /* פס דק מעל התיאור */
+  border-top: 1px solid #ddd;
   margin: 12px 0;
 }
 
@@ -31,11 +31,11 @@
   color: #555;
   line-height: 1.4;
   max-width: 250px;
-  display: -webkit-box;        /* דרוש עבור ellipsis מרובה שורות */
-  -webkit-line-clamp: 2;       /* מספר השורות המקסימלי */
-  -webkit-box-orient: vertical;/* הכיוון האנכי של הקופסה */
-  overflow: hidden;             /* חיתוך מעבר לגבול */
-  text-overflow: ellipsis;      /* הוספת ... בסוף */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;          
+  text-overflow: ellipsis;     
 }
 
 .actions {

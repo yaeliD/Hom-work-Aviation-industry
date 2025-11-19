@@ -11,6 +11,6 @@
 .filters-container {
   display: flex;
   gap: 12px;
-  margin-inline-start: auto; /* דוחף את השדות לצד ההפוך */
+  margin-inline-start: auto;
   align-items: center;
 }
