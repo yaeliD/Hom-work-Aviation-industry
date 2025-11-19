@@ -40,7 +40,6 @@ namespace BulletinBoard.Controllers
             if (result != PasswordVerificationResult.Success)
                 return Unauthorized("Wrong password");
 
-            // יוצרים JWT
             var token = CreateToken(user);
 
             return Ok(new { token });

@@ -23,15 +23,6 @@ namespace BulletinBoard.Core.Services
             File.WriteAllText(_filePath, json);
         }
 
-        //public User AddUser(User user)
-        //{
-        //    var list = LoadUsers();
-        //    user.Id = list.Count == 0 ? 1 : list.Max(x => x.Id) + 1;
-        //    list.Add(user);
-        //    SaveUsers(list);
-
-        //    return user;
-        //}
     }
 
 }

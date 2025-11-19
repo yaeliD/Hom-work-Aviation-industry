@@ -6,9 +6,6 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -43,20 +40,12 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
-// אם רוצים הפנייה ל-HTTPS
-//app.UseHttpsRedirection();
-
-// CORS חייב להיות לפני Authentication/Authorization
+app.UseHttpsRedirection();
 app.UseCors("AllowAngularApp");
-
 app.UseAuthentication();
 app.UseAuthorization();
-
-// Map controllers
 app.MapControllers();
 
-// OpenAPI רק בסביבת פיתוח
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();

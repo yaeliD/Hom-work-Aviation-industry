@@ -39,7 +39,7 @@ namespace BulletinBoard.Controllers
         [ActionName("CreateBulletin")]
         public IActionResult CreateBulletin([FromBody] Bulletin bulletin)
         {
-            var userName = User?.Identity?.Name; // צריך להיות שם המשתמש
+            var userName = User?.Identity?.Name;
             var claim = User?.FindFirst("userId");
             if (claim == null) return Unauthorized("No user claim found");
 
@@ -60,9 +60,9 @@ namespace BulletinBoard.Controllers
                 return NotFound();
 
             if (existing.UserId != userId)
-                return Forbid(); // ❌ משתמש זר
+                return Forbid();
 
-            bulletin.UserId = userId; // שלא יעקוף את זה מהלקוח
+            bulletin.UserId = userId;
             var updated = _service.Update(id, bulletin);
             return Ok(updated);
         }
