@@ -8,5 +8,6 @@
 
 .card-background {
     background: linear-gradient(135deg, #f6e5ef);
+    direction: rtl;
 }
 

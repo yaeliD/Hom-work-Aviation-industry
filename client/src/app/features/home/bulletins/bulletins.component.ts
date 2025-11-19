@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {provideNativeDateAdapter} from '@angular/material/core';
+import { BidiModule } from '@angular/cdk/bidi';
 
 @Component({
   selector: 'app-bulletins',
@@ -25,7 +26,8 @@ import {provideNativeDateAdapter} from '@angular/material/core';
       MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatGridListModule, MatDatepickerModule
+    MatGridListModule, MatDatepickerModule,BidiModule
+
   ],
   templateUrl: './bulletins.component.html',
   

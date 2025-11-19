@@ -10,13 +10,13 @@
     יצירת מודעה
   </button>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field dir="rtl" appearance="outline">
       <mat-label>חיפוש לפי כותרת</mat-label>
       <input matInput (input)="titleFilter.set($any($event.target).value)" />
       <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field dir="rtl" appearance="outline">
       <mat-label>פילטור מ תאריך</mat-label>
       <input
         matInput
